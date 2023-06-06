@@ -42,6 +42,12 @@ public class HelloController {
 
         return calculatorServic.answerMultiply(num1,num2);
     }
+    @GetMapping(path = "/divide")
+    public String  answerDivide (@RequestParam(required = true) int num1,
+                                  @RequestParam (required = true) int num2) {
+
+        return calculatorServic. answerDivide(num1,num2);
+    }
 
 }
 
