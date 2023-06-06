@@ -36,6 +36,12 @@ public class HelloController {
 
         return calculatorServic.answerMinus(num1,num2);
     }
+    @GetMapping(path = "/multiply")
+    public String answerMultiply (@RequestParam(required = true) int num1,
+                               @RequestParam (required = true) int num2) {
+
+        return calculatorServic.answerMultiply(num1,num2);
+    }
 
 }
 

@@ -18,4 +18,9 @@ class CalculatorServicimpl implements CalculatorService {
 
         return num1 + "-" + num2 + "=" + diff;
     }
+    public String answerMultiply(int num1, int num2) {
+        int multipli = num1 * num2;
+
+        return num1 + "*" + num2 + "=" + multipli;
+    }
 }
