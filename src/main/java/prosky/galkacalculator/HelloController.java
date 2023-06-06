@@ -30,6 +30,12 @@ public class HelloController {
             return calculatorServic.answerPlus(num1,num2);
         }
 
+    @GetMapping(path = "/minus")
+    public String answerMinus (@RequestParam(required = true) int num1,
+                             @RequestParam (required = true) int num2) {
+
+        return calculatorServic.answerMinus(num1,num2);
+    }
 
 }
 
